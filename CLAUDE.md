@@ -12,7 +12,7 @@ This repository makes and publishes the KUYDIGITAL Facebook page's posts. A sche
 Kinds: `work`, `few-words`, `build`, `open`.
 
 - The first post of each calendar month is `open`, unless an `open` post already went out this month.
-- Otherwise follow the cycle `work → few-words → build → few-words`, continuing from the last non-`open` entry in the log (after a `few-words` that followed `work`, comes `build`; after a `few-words` that followed `build`, comes `work`).
+- Otherwise follow the cycle `work → few-words → build → few-words`, continuing from the last non-`open` entry in the log (after a `few-words` that followed `work`, comes `build`; after a `few-words` that followed `build`, or with nothing before it, comes `work`).
 - `work` and `build`: rotate projects. Never use the same project as the previous `work` or `build` post.
 
 ## 3. Write it
