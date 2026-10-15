@@ -6,6 +6,8 @@ This repository makes and publishes the KUYDIGITAL Facebook page's posts. A sche
 
 - `git pull`, then read `content/log.jsonl` (every post so far, newest last) and `content/projects.md` (the only facts a post may state).
 - If the log already has an entry with today's date (Asia/Manila), stop: today's post is done. Report that and end.
+- Monthly limit: Oliver's free Metricool plan allows 10 posts a calendar month. Count this month's posts two ways: entries in the log dated this month, and posts returned by the Metricool connector's `getScheduledPosts` (brandId `7418406`, timezone `Asia/Manila`, from the 1st of this month 00:00 to the last day 23:59). Take the larger count. If it is 10 or more, do not post: report that the month's allowance is used up and end. If it is 9, post only if no other post is already scheduled for later this month.
+- Any post made outside this task (for example one Oliver asks for in a chat) also gets a line in the log, so the count stays right.
 
 ## 2. Pick the kind of post
 
